@@ -5,8 +5,8 @@
   "scripts": {
     "start": "electron .",
     "dev": "electron . --dev",
-    "build": "electron-builder --mac",
-    "build:dmg": "electron-builder --mac dmg",
+    "build": "electron-builder --mac && rm -rf dist/mac-arm64",
+    "build:dmg": "electron-builder --mac dmg && rm -rf dist/mac-arm64",
     "build:dir": "electron-builder --mac dir"
   },
   "keywords": [],

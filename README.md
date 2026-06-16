@@ -1,10 +1,22 @@
-# launchdCenter
+<p align="center">
+  <img src="icon.png" width="128" height="128" alt="launchdCenter">
+</p>
 
-[日本語](README.ja.md)
+<h1 align="center">launchdCenter</h1>
 
-A GUI application for managing macOS launchd jobs (background services and daemons).
+<p align="center">
+  A GUI application for managing macOS launchd jobs (background services and daemons).
+</p>
 
-<img src="https://img.shields.io/badge/platform-macOS-blue" alt="macOS"> <img src="https://img.shields.io/badge/arch-Apple%20Silicon-green" alt="Apple Silicon">
+<p align="center">
+  <img src="https://img.shields.io/badge/platform-macOS-blue" alt="macOS">
+  <img src="https://img.shields.io/badge/arch-Apple%20Silicon-green" alt="Apple Silicon">
+  <a href="https://github.com/qalainau/launchdCenter/releases"><img src="https://img.shields.io/github/v/release/qalainau/launchdCenter" alt="Release"></a>
+</p>
+
+<p align="center">
+  <a href="README.ja.md">日本語</a>
+</p>
 
 ## Features
 

@@ -1,10 +1,22 @@
-# launchdCenter
+<p align="center">
+  <img src="icon.png" width="128" height="128" alt="launchdCenter">
+</p>
 
-[English](README.md)
+<h1 align="center">launchdCenter</h1>
 
-macOS の launchd ジョブ（バックグラウンドサービス/デーモン）を管理するGUIアプリケーション。
+<p align="center">
+  macOS の launchd ジョブ（バックグラウンドサービス/デーモン）を管理するGUIアプリケーション。
+</p>
 
-<img src="https://img.shields.io/badge/platform-macOS-blue" alt="macOS"> <img src="https://img.shields.io/badge/arch-Apple%20Silicon-green" alt="Apple Silicon">
+<p align="center">
+  <img src="https://img.shields.io/badge/platform-macOS-blue" alt="macOS">
+  <img src="https://img.shields.io/badge/arch-Apple%20Silicon-green" alt="Apple Silicon">
+  <a href="https://github.com/qalainau/launchdCenter/releases"><img src="https://img.shields.io/github/v/release/qalainau/launchdCenter" alt="Release"></a>
+</p>
+
+<p align="center">
+  <a href="README.md">English</a>
+</p>
 
 ## 機能
 
