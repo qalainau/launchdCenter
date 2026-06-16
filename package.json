@@ -1,0 +1,17 @@
+{
+  "name": "launchd-center",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "A macOS launchd management GUI",
+  "dependencies": {
+    "electron": "^42.4.1",
+    "plist": "^3.1.0"
+  }
+}
