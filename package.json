@@ -4,14 +4,42 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "dev": "electron . --dev"
+    "dev": "electron . --dev",
+    "build": "electron-builder --mac",
+    "build:dmg": "electron-builder --mac dmg",
+    "build:dir": "electron-builder --mac dir"
   },
   "keywords": [],
-  "author": "",
+  "author": "Yuichi Okada",
   "license": "ISC",
   "description": "A macOS launchd management GUI",
+  "build": {
+    "appId": "com.webll.launchdcenter",
+    "productName": "launchdCenter",
+    "mac": {
+      "category": "public.app-category.utilities",
+      "target": [
+        "dmg"
+      ],
+      "identity": "WEBLL SYSTEM LIMITED PARTNERSHIP (JG97GD5AF9)",
+      "hardenedRuntime": true,
+      "gatekeeperAssess": false,
+      "entitlements": "entitlements.plist",
+      "entitlementsInherit": "entitlements.plist",
+      "notarize": true
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "src/**/*",
+      "node_modules/**/*"
+    ]
+  },
   "dependencies": {
-    "electron": "^42.4.1",
     "plist": "^3.1.0"
+  },
+  "devDependencies": {
+    "electron": "^42.4.1",
+    "electron-builder": "^26.15.3"
   }
 }
