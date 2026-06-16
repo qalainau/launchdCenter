@@ -18,6 +18,10 @@
   <a href="README.md">English</a>
 </p>
 
+<p align="center">
+  <img src="screenshot.png" width="800" alt="launchdCenter スクリーンショット">
+</p>
+
 ## 機能
 
 ### ジョブ管理

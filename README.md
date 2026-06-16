@@ -18,6 +18,10 @@
   <a href="README.ja.md">日本語</a>
 </p>
 
+<p align="center">
+  <img src="screenshot.png" width="800" alt="launchdCenter screenshot">
+</p>
+
 ## Features
 
 ### Job Management
