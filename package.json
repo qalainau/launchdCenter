@@ -26,7 +26,8 @@
       "gatekeeperAssess": false,
       "entitlements": "entitlements.plist",
       "entitlementsInherit": "entitlements.plist",
-      "notarize": true
+      "notarize": true,
+      "icon": "build/icon.icns"
     },
     "files": [
       "main.js",

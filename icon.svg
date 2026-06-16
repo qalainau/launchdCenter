@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1b2e"/>
+      <stop offset="100%" stop-color="#2d1b69"/>
+    </linearGradient>
+    <linearGradient id="rocket" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#f0f0f5"/>
+      <stop offset="100%" stop-color="#c8c8d8"/>
+    </linearGradient>
+    <linearGradient id="flame" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#ff6b35"/>
+      <stop offset="50%" stop-color="#ffaa00"/>
+      <stop offset="100%" stop-color="#ffe066"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6c63ff"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#6c63ff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#6c63ff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background rounded square -->
+  <rect x="20" y="20" width="984" height="984" rx="220" ry="220" fill="url(#bg)"/>
+
+  <!-- Subtle grid lines for "dashboard" feel -->
+  <g opacity="0.06" stroke="#ffffff" stroke-width="1.5">
+    <line x1="512" y1="120" x2="512" y2="904"/>
+    <line x1="120" y1="512" x2="904" y2="512"/>
+    <circle cx="512" cy="512" r="280" fill="none"/>
+    <circle cx="512" cy="512" r="180" fill="none"/>
+  </g>
+
+  <!-- Outer orbital ring -->
+  <circle cx="512" cy="512" r="300" fill="none" stroke="url(#ring)" stroke-width="8" opacity="0.5"/>
+
+  <!-- Orbit dots (like managed processes) -->
+  <circle cx="812" cy="512" r="14" fill="#6c63ff" opacity="0.9"/>
+  <circle cx="512" cy="212" r="14" fill="#3b82f6" opacity="0.9"/>
+  <circle cx="267" cy="724" r="14" fill="#8b5cf6" opacity="0.9"/>
+  <circle cx="720" cy="280" r="10" fill="#60a5fa" opacity="0.6"/>
+  <circle cx="280" cy="380" r="10" fill="#818cf8" opacity="0.6"/>
+
+  <!-- Glow under rocket -->
+  <ellipse cx="512" cy="680" rx="100" ry="30" fill="url(#glow)"/>
+
+  <!-- Rocket body -->
+  <g transform="translate(512, 480)">
+    <!-- Rocket main body -->
+    <path d="M0,-220 C40,-220 65,-160 65,-40 L65,100 C65,120 40,140 0,140 C-40,140 -65,120 -65,100 L-65,-40 C-65,-160 -40,-220 0,-220Z" fill="url(#rocket)"/>
+
+    <!-- Nose cone -->
+    <path d="M0,-280 C15,-280 45,-240 55,-180 L-55,-180 C-45,-240 -15,-280 0,-280Z" fill="url(#rocket)"/>
+    <path d="M0,-280 C8,-280 25,-250 32,-220 L-32,-220 C-25,-250 -8,-280 0,-280Z" fill="#e0e0ee"/>
+
+    <!-- Window -->
+    <circle cx="0" cy="-120" r="30" fill="#1a1b2e"/>
+    <circle cx="0" cy="-120" r="24" fill="#3b82f6" opacity="0.8"/>
+    <circle cx="-8" cy="-128" r="8" fill="#ffffff" opacity="0.4"/>
+
+    <!-- Body stripe -->
+    <rect x="-65" y="20" width="130" height="12" rx="2" fill="#6c63ff" opacity="0.6"/>
+
+    <!-- Left fin -->
+    <path d="M-65,40 L-110,140 L-110,150 C-110,155 -105,158 -100,155 L-65,120Z" fill="url(#ring)"/>
+
+    <!-- Right fin -->
+    <path d="M65,40 L110,140 L110,150 C110,155 105,158 100,155 L65,120Z" fill="url(#ring)"/>
+
+    <!-- Flame -->
+    <path d="M-40,140 C-40,140 -30,200 0,240 C30,200 40,140 40,140 C30,150 20,145 0,180 C-20,145 -30,150 -40,140Z" fill="url(#flame)" opacity="0.95"/>
+    <path d="M-20,145 C-20,145 -12,190 0,210 C12,190 20,145 20,145 C15,155 8,150 0,175 C-8,150 -15,155 -20,145Z" fill="#ffe066" opacity="0.9"/>
+  </g>
+
+  <!-- Small process indicator dots on the ring -->
+  <g>
+    <circle cx="812" cy="512" r="14" fill="none" stroke="#6c63ff" stroke-width="3" opacity="0.3">
+      <animate attributeName="r" values="14;22;14" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0;0.3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
